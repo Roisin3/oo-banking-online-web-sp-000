@@ -12,5 +12,5 @@ class Transfer
     @sender.valid? && amount.valid? ? true:false
   end
 
-  def 
+  def
 end
