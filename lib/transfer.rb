@@ -9,7 +9,7 @@ class Transfer
   end
 
   def valid?
-    @sender.valid? && amount.valid? ? true : false
+    @sender.valid? && @receiver.valid? ? true : false
   end
 
   def
