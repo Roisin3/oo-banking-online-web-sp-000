@@ -13,6 +13,16 @@ class Transfer
     @sender.valid? && @receiver.valid?
   end
 
+  def execute_transaction
+    if @sender > @amount
+      @sender -= @amount
+      @receiver += @amount
+      @status = "completed"
+    else
+      @status = "Rejected"
+    end
+  end
+
 
 
 end
