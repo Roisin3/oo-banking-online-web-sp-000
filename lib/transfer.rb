@@ -14,7 +14,7 @@ class Transfer
   end
 
   def execute_transaction
-    if @sender > @amount
+    if @sender >= @amount
       @sender -= @amount
       @receiver += @amount
       @status = "completed"
